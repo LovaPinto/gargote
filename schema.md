@@ -11,6 +11,7 @@ prix en int et identifiant id_plat ou nom_plat
 ## etape 2
 PLAT
 **#id_categorie_nom** int not null,
+leftjoin
 
 **reponse 2**
 car des plat peuvent avoir les meme categorie et on peux faire une erreur de saisie alors que les plat on meme categorie 
@@ -22,6 +23,8 @@ car des plat peuvent avoir les meme categorie et on peux faire une erreur de sai
 si on faire un select avec where categori="plat malagasy" donc le resultat est 2,Ravitoto sy henakisoa, plat malagasy alors qu on veux les plat avec categorie plat malagasy
 
 ## etape 3
+leftjoin
+
 CREATE TABLE IF NOT EXISTS numero_commande (
 -    id serial primary key,
 -    numero_commande VARCHAR(100) unique not null
